@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">send otp</button>
+    <input type="number" name="" id="">
+    <button id="btn2">submit</button>
+    <script>
+        let btn1=document.querySelector("#btn1")
+        let btn2=document.querySelector("#btn2")
+        let otp=(Math.ceil(Math.random()*10000))
+        btn1.addEventListener("click",()=>{
+            
+            alert(`The otp is ${otp}`)
+        })
+        
+        btn2.addEventListener("click",()=>{
+            let input=document.querySelector("input").value
+            if(otp==input){
+                console.log("success");
+                
+            }
+            else{
+                console.log("invalid");
+                
+            }
+            
+
+        })
+        
+
+    </script>
+</body>
+</html>

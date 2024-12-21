@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Username</h2>
+    <input type="text" name="" id="u" required>
+    <h2>Email</h2>
+    <input type="email" name="" id="e" required>
+    <button onclick="change()">submit</button>
+    <script>
+        function change(){
+            let user=document.querySelector("#u")
+            let email=document.querySelector("#e")
+            console.log(user.value);
+            console.log(email.value);
+            
+            
+        }
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">city</label>
+    <select name="" id="">
+        <option value="Kolkata" id="k">Kolkata</option>
+        <option value="Delhi" id="d">Delhi</option>
+        <option value="Chennai" id="c">Chennai</option>
+    </select>
+    <button>sumbit</button>
+    <script>
+        let btn=document.querySelector("button")
+        btn.addEventListener("click",()=>{
+            let select=document.querySelector("select")
+            console.log(select.value)
+
+            
+        })
+    </script>
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Username</h2>
+    <input type="text" id="text">
+    <h2>PassWord</h2>
+    <input type="text" id="pass">
+    <button>submit</button>
+    <script>
+        let btn=document.querySelector("button")
+        btn.addEventListener("click",()=>{
+            let t=document.querySelector("#text")
+            let pa=document.querySelector("#pass")
+            let table=document.createElement("table")
+            let th=document.createElement("th")
+            let tr=document.createElement("tr")
+            let tr1=document.createElement("tr")
+            let td=document.createElement("td")
+            let td1=document.createElement("td")
+            let td2=document.createElement("td")
+            let td3=document.createElement("td")
+            td.innerText="username"
+            td1.innerText="password"
+            td2.innerText=t.value
+            td3.innerText=pa.value
+            document.body.appendChild(table)
+            table.appendChild(tr)
+            tr.appendChild(td)
+            tr.appendChild(td1)
+            table.appendChild(tr1)
+            tr1.appendChild(td2)
+            tr1.appendChild(td3)
+            table.style.border="2px solid"
+            td.style.border="2px solid"
+            td1.style.border="2px solid"
+            td2.style.border="2px solid"
+            td3.style.border="2px solid"
+            
+
+        })
+
+
+    </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function* x(){
+            yield 10;
+            yield 20;
+        }
+        let s=x();
+        console.log(s.next().value);
+        console.log(s.next().value);
+        
+    </script>
+</body>
+</html>

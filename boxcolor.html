@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #re{
+            height: 500px;
+            width: 500px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #ye{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #gr{
+            height: 200px;
+            width: 200px;
+            background-color: green;  
+        }
+        #div{
+            display: flex;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="re">
+        <div id="ye">
+            <div id="gr">
+                
+
+            </div>
+    
+        </div>
+    
+    </div>
+<script>
+
+    let g= document.querySelector("#re")
+    g.addEventListener("click",(e)=>{
+        console.log("grand parent");
+        e.stopImmediatePropagation()
+        
+    })
+    let p= document.querySelector("#ye")
+    p.addEventListener("click",(e)=>{
+        console.log("parent");
+        e.stopImmediatePropagation()
+        
+    })
+    let c= document.querySelector("#gr")
+    c.addEventListener("click",(e)=>{
+        console.log("child");
+        e.stopImmediatePropagation()
+        
+    })
+</script>
+    
+</body>
+
+</html>
